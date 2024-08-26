@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <title>Contact</title>
     <style>
         body, html {
@@ -10,7 +12,7 @@
             padding: 0;
             height: 100%;
             overflow: hidden;
-            font-family: Raleway, sans-serif;
+            font-family: 'Raleway', sans-serif;
         }
         .overlay {
             position: absolute;
@@ -42,17 +44,43 @@
             border-radius; 5px;
         }
         .navbar a {
-        margin: 0 20px;
-        text-decoration: none;
-        color: #000
+            margin: 0 20px;
+            text-decoration: none;
+            color: #000
         }
         .navbar a:hover {
-         background-color: rgba(255, 255, 255, 0.25);
-        color: black;
-        padding: 5px 15px;
-        border-radius: 5px;
-        transform: scale(1.1);
-        transition: transform 0.3s ease;
+            background-color: rgba(255, 255, 255, 0.25);
+            color: black;
+            padding: 5px 15px;
+            border-radius: 5px;
+            transform: scale(1.1);
+            transition: transform 0.3s ease;
+        }
+        .container {
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding-top: 200px;
+            gap: 50px,
+            padding: 15px 25px;
+            color: #000;
+            border-radius; 5px;
+        }
+        .linkedin {
+            position: absolute; /* Make sure the footer is at the bottom */
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            padding: 2px;
+            padding-bottom: 40px;
+            font-size: 30px; /* Smaller text size */
+            background-color: rgba(255, 255, 255, 0.25);
+            color: #404040;
         }
         .footer {
             position: absolute; /* Make sure the footer is at the bottom */
@@ -69,17 +97,23 @@
 </head>
 <body>
         <div class="overlay">
-            <h1>Contact me</h1>
+            <h1>Contact</h1>
         </div>
         <div class = "navbar">
             <a href="../index.html"> Home </a>
             <a href="projects.html"> Projects </a>
+            <a href="research.html"> Research </a>
             <a href="resources.html"> Resources </a>
-            <a href="photos.html"> Photos </a>
             <a href="contact.html"> Contact </a>
-            <a href="https://www.linkedin.com/in/lindsayvnielsen/" target="_blank"> LinkedIn </a>
-
         </div>
+        <div class="linkedin">
+            <a href="https://www.linkedin.com/in/lindsayvnielsen/" target="_blank">
+            <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+                    <div class="container">
+                <p><b>Email:</b> lindsayvwn@gmail.com </p>
+            </div>
         <div class="footer">
             <h2>COPYRIGHT © 2024 LINDSAY NIELSEN. ALL RIGHTS RESERVED. </h2>
         </div>
