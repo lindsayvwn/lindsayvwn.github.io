@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css" /> <!--CSS code to format the page kept separate to avoid repeating code in other html files -->
     <title>Resources</title>
     <style>
         body, html {
@@ -86,10 +87,20 @@
         </div>
         <div class = "navbar">
             <a href="../index.html"> Home </a>
-            <a href="projects.html"> Projects </a>
+           <div class="dropdown">
+                <a href="projects.html">Projects</a>
+                <div class="dropdown-content">
+                    <a href="resources.html">Resources</a>
+                </div>
+            </div>
             <a href="research.html"> Research </a>
-            <a href="resources.html"> Resources </a>
-            <a href="contact.html"> Contact </a>
+
+            <div class="dropdown">
+                <a href="about.html">About</a>
+                <div class="dropdown-content">
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
         </div>
         <div class="linkedin">
             <a href="https://www.linkedin.com/in/lindsayvnielsen/" target="_blank">

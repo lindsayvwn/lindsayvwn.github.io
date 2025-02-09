@@ -9,17 +9,28 @@
     <title>Home</title>
 </head>
 <body> <!--What goes into the webpage -->
-    <div class="photo-background"> <!--Calling selector-->
+    <div class="homepage-background"> <!--Calling selector-->
         <img src="assets/images/homepage.JPG" alt="Background Photo"> <!--Path to the background photo -->
-        <div class="header-title">
-            <h1 style="color:white;">Lindsay Nielsen</h1>
+        <div class="header-title"> <!--Calling selector header title-->
+            <h1 style="color:white;">Lindsay Nielsen</h1> <!-- Default color for the menu is black, but since the homepage has a background photo, I want to override and have the text be white -->
         </div>
         <div class = "navbar">
             <a style="color:white;" href="index.html"> Home </a>
-            <a style="color:white;" href="pages/projects.html"> Projects </a>
+           <div class="dropdown">
+                <a style="color:white;" href="pages/projects.html">Projects</a>
+                <div class="dropdown-content">
+                    <a style="color:white;" href="pages/resources.html">Resources</a>
+                </div>
+            </div>
             <a style="color:white;" href="pages/research.html"> Research </a>
-            <a style="color:white;" href="pages/resources.html"> Resources </a>
-            <a style="color:white;" href="pages/contact.html"> Contact </a>
+
+            <div class="dropdown">
+                <a style="color:white;" href="pages/about.html">About</a>
+                <div class="dropdown-content">
+                    <a style="color:white;" href="pages/contact.html">Contact</a>
+                </div>
+            </div>
+
         </div>
         <div class="row">
           <div class="main4">
